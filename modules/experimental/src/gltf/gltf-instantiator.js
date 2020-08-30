@@ -113,8 +113,7 @@ export default class GLTFInstantiator {
   }
 
   getVertexCount(attributes) {
-    // TODO: implement this
-    log.warn('getVertexCount() not found')();
+    return attributes['POSITION'].count;
   }
 
   createPrimitive(gltfPrimitive, i, gltfMesh) {
